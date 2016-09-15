@@ -7,7 +7,7 @@ import seaborn as sns
 rc={'lines.linewidth': 2, 'axes.labelsize': 18, 'axes.titlesize': 18}
 sns.set(rc=rc)
 
-df = pd.read_csv('data/frog_tongue_adhesion.csv', comment='#')
+[df = pd.read_csv('data/frog_tongue_adhesion.csv', comment='#')]
 
 df_big_force = df[df['impact force (mN)'] > 1000]
 df_big_force.loc[:,['impact time (ms)']]
